@@ -1,23 +1,22 @@
 $(document).ready(function (){
-	getListWeb();
-	getRefreshDate();
-	var options = {
-		valueNames: ["banco", "venta", "compra"]
-	},
-	documentTable = new List("mdl-table", options);
+	// getListWeb();
+	// getRefreshDate();
+	// var options = {
+	// 	valueNames: ["banco", "venta", "compra"]
+	// },
+	// documentTable = new List("mdl-table", options);
 
-	$($("th.sort")[0]).trigger("click", function() {
-		console.log("clicked");
-	});
+	// $($("th.sort")[0]).trigger("click", function() {
+	// 	console.log("clicked");
+	// });
 
-	$("input.search").on("keyup", function(e) {
-		if (e.keyCode === 27) {
-			$(e.currentTarget).val("");
-			documentTable.search("");
-		}
-	});
-
-	//getList();
+	// $("input.search").on("keyup", function(e) {
+	// 	if (e.keyCode === 27) {
+	// 		$(e.currentTarget).val("");
+	// 		documentTable.search("");
+	// 	}
+	// });
+	
 });
 function getRefreshDate()
 {
