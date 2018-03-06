@@ -1,6 +1,6 @@
 $(document).ready(function (){
-	// getListWeb();
-	// getRefreshDate();
+	getListWeb();
+	getRefreshDate();
 	// var options = {
 	// 	valueNames: ["banco", "venta", "compra"]
 	// },
