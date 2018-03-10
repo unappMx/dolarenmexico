@@ -57,7 +57,7 @@ function getListMobile(){
             	res = res.replace(/'/g,"\"");
             	res = $.parseJSON(res);            	
                 $.each(res, function (j, item) {
-                	retLogo='<img src="images/'+getLogo(item.BANCO_NAME)+'" class="material-icons mdl-list__item-avatar"><span>'+item.BANCO_NAME+'</span>';
+                	retLogo='<img src="images/'+getLogo(item.BANCO_NAME)+'" alt="'+item.BANCO_NAME+'" class="material-icons mdl-list__item-avatar"><span>'+item.BANCO_NAME+'</span>';
                 	pc='<span class="mdl-list__item-sub-title">Venta: $'+item.DL_PV+'</span>';
                   	pv='<span class="mdl-list__item-sub-title">Compra: $'+item.DL_PC+'</span></span>';
                   	html+=header+retLogo+pc+pv+footer;                   
@@ -94,7 +94,7 @@ function getListWeb(){
                 	contList++;
                 	promPc=Number(promPc)+Number(item.DL_PC);
                 	promPv=Number(promPv)+Number(item.DL_PV);                   	
-                	banco='<td class="mdl-data-table__cell--non-numeric banco"><img src="images/'+getLogo(item.BANCO_NAME)+'" class="material-icons mdl-list__item-avatar"> '+item.BANCO_NAME+'</td>';
+                	banco='<td class="mdl-data-table__cell--non-numeric banco"><img src="images/'+getLogo(item.BANCO_NAME)+'" alt="Banco '+item.BANCO_NAME+'" class="material-icons mdl-list__item-avatar"> '+item.BANCO_NAME+'</td>';
                 	pc='<td class="venta">'+Number(item.DL_PV).toFixed(2)+'</td>';
                   	pv='<td class="compra">'+Number(item.DL_PC).toFixed(2)+'</td>';
                   	row+='<tr>'+banco+pc+pv+'</tr>';                   
