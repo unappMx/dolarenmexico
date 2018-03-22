@@ -340,3 +340,10 @@ th.sort.desc:after {
   font-size: 10px;
   text-align: center;
 }
+/*para cels*/
+.mdl-data-table th {
+    padding: 0 5px 12px 5px;    
+}
+mdl-data-table td {    
+    padding: 12px 5px;   
+}
