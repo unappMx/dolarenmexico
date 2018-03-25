@@ -185,8 +185,8 @@ _:-ms-input-placeholder, :root .demo-graph {
   background-position: 90% 100%;
   background-repeat: no-repeat;
 }*/
-.mdl-card{
-  min-height: 50px;
+.ads-height{
+  min-height: auto;
 }
 .demo-cards .mdl-card__actions a {
   color: #00BCD4;
@@ -347,6 +347,6 @@ th.sort.desc:after {
 .mdl-data-table th {
     padding: 0 5px 12px 5px;    
 }
-mdl-data-table td {    
+.mdl-data-table td {    
     padding: 12px 5px;   
 }
