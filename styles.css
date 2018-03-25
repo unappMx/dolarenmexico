@@ -185,6 +185,9 @@ _:-ms-input-placeholder, :root .demo-graph {
   background-position: 90% 100%;
   background-repeat: no-repeat;
 }*/
+.mdl-card{
+  min-height: 50px;
+}
 .demo-cards .mdl-card__actions a {
   color: #00BCD4;
   text-decoration: none;
